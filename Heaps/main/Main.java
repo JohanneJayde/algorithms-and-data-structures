@@ -5,6 +5,7 @@ public class Main {
             System.out.print( element + " ");
         }
     }
+    
     public static void main(String[] args) {
         int [] arr = {6,5,4,3,2,1};
         int [] arr2 = {1,2,3,4,5,6};
