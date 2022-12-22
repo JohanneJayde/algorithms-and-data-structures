@@ -1,5 +1,5 @@
 public class methods {
-    public static int [] HeapSortDescending(int [] arr){
+    public static int [] HeapSortAscending(int [] arr){
         Heap heap = new Heap(arr);
         heap.buildMaxHeap();
         int [] heapElements = heap.getHeapElements();
@@ -13,7 +13,7 @@ public class methods {
 
     }
 
-    public static int [] HeapSortAscending(int [] arr){
+    public static int [] HeapSortDescending(int [] arr){
         Heap heap = new Heap(arr);
         heap.buildMinHeap();
         int [] heapElements = heap.getHeapElements();

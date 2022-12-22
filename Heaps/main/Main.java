@@ -7,15 +7,23 @@ public class Main {
     }
     
     public static void main(String[] args) {
-        int [] arr = {6,5,4,3,2,1};
-        int [] arr2 = {1,2,3,4,5,6};
+        int [] arr = {2,5,6,1,4,3};
 
-        int [] sortedArray = methods.HeapSortDescending(arr);
-        int [] sortedArray2 = methods.HeapSortAscending(arr2);
 
-        printArray(sortedArray);
+
+        System.out.print("unsorted array: ");
+        printArray(arr);
+        int [] sortedArray = methods.HeapSortAscending(arr);
         System.out.println();
+        System.out.print("array after HeapSort in ascending order: ");
+        printArray(sortedArray);
+
+
+        int [] sortedArray2 = methods.HeapSortDescending(arr);
+        System.out.println();
+        System.out.print("array after HeapSort in descending order: ");
         printArray(sortedArray2);
+        System.out.println();
 
     }
 }
